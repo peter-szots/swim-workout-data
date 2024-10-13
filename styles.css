@@ -1,0 +1,181 @@
+/* General Reset and Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #A6C6FA;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styling */
+.header {
+    /*background-color: #333;*/
+    color: #000;
+    padding: 20px 0;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.header .nav {
+    float: right;
+}
+
+.header .nav ul {
+    list-style: none;
+}
+
+.header .nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.header .nav ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #000;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #f04;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Features Section */
+.features {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.features h3 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.feature-grid {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.feature-box {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.feature-box h4 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.feature-box h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    font-size: 16px;
+}
+
+/* Footer Section */
+.footer {
+    /*background-color: #333;*/
+    color: #000;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header .nav {
+        float: none;
+        text-align: center;
+    }
+
+    .header .nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .feature-grid {
+        flex-direction: column;
+    }
+
+    .feature-box {
+        margin-bottom: 20px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero .btn {
+        padding: 8px 20px;
+    }
+}
+
+.hero .content {
+    text-align: left;
+}
+
+.hero .content strong {
+    font-size: 28px;
+}
+
+.hero .content ul li {
+    margin-left: 20px;
+    font-size: 20px;
+}
